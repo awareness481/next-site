@@ -13,7 +13,7 @@ const H1 = ({ children }) => (
 );
 
 const H2 = ({ children }) => (
-  <h2 className="fw7">
+  <h2 className="fw7" id={children.toString().replace(' ', '-').toLowerCase()}>
     {children}{' '}
     <style jsx>{`
       h2 {
