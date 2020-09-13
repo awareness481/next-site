@@ -177,6 +177,7 @@ const Docs = ({ routes, route: _route, data, html }) => {
 
 export async function getStaticPaths() {
   const tag = await getCurrentTag();
+
   const manifest = await fetchDocsManifest(tag);
   return { paths: getPaths(manifest.routes), fallback: true };
 }
