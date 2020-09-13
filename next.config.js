@@ -18,7 +18,7 @@ const withGitHubMDX = nextMDX({
         rehypeReadme,
         {
           repo: 'vercel/next.js',
-          branch: 'master',
+          branch: 'canary',
           level: 4
         }
       ]
